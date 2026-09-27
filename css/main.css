@@ -23,12 +23,34 @@ body {
     background-color: var(--color-bg);
     line-height: 1.6;
     padding: var(--space-lg);
-}
 
-a {
-    color: var(--color-primary);
-}
+    header {
+        margin: var(--space-md);
 
-a:hover {
-    color: var(--color-primary-hover);
+        h1 {
+            margin-bottom: var(--space-md);
+        }
+    }
+
+    nav {
+        margin: var(--space-md);
+        margin-bottom: var(--space-md);
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    a {
+        color: var(--color-primary);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-primary-hover);
+        }
+    }
+
+    main {
+        margin: var(--space-md);
+    }
 }
