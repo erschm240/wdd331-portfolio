@@ -1,0 +1,14 @@
+/* Utility classes: single-purpose helpers.
+   These live in the last layer so they override components
+   by layer order without needing !important. */
+
+/* TODO: Add any utility classes you find useful */
+
+p {
+   line-height: var(--line-spacing);
+}
+
+input::placeholder,
+textarea::placeholder {
+   font-family: var(--secondary-font);
+}

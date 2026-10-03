@@ -1,0 +1,25 @@
+/* Color tokens: define all color values for the site.
+   Name by purpose (--color-primary, --color-surface)
+   not appearance (--blue, --light-gray). */
+:root {
+    /* TODO: Define color tokens here */
+    --color-primary: #b0d0f0;
+    --color-primary-light: #cce3fa;
+    --color-background: #f9f9f9;
+    --color-component-background: #e5e5e5;
+    --color-text: #333333;
+    --color-text-light: #444444;
+    --color-accent: #224889;
+    --color-hover: #3569c2;
+
+    --color-btn-primary: #84ba7a;
+    --color-btn-secondary: #a4d49d;
+
+    --color-border: #333333;
+    --color-border-disabled: #666666;
+
+    --color-status-open: #386e2e;
+    --color-status-open-background: #bcf4b2;
+    --color-status-construction: #a4651e;
+    --color-status-construction-background: #fde3c6;
+}
