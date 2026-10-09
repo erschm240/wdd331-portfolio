@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1 {
+        text-align: center;
+    }
+
+    .cards {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+
+        @media (width >= 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (width >= 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            margin: 2rem;
+            padding: 1.5rem;
+            background-color: #daedfd;
+            border: 2px solid #7fc6ff;
+            border-radius: 0.5rem;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+focus-card::part(title) {
+    color: #6015a1;
+}

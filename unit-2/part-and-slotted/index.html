@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part and Slotted</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" defer src="script.js"></script>
+</head>
+<body>
+    <h1>The Shadow DOM, Part, and Slotted</h1>
+    <div class="cards">
+        <article class="card">
+            <h2>Card Header</h2>
+            <p>
+                This card is in the Light DOM! Lorem ipsum dolor sit amet consectetur adipiscing elit.
+            </p>
+        </article>
+
+        <!-- The author's custom element on the page-->
+        <focus-card>
+            <!-- The consumer's element using "slot" to add their own content, as allowed by the author -->
+            <p slot="focus-card-text">This card is in the Shadow DOM! Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </focus-card>
+    </div>
+
+    <!-- The author's template used in the creation of a custom template -->
+    <template id="focus-card">
+        <article class="card">
+            <!-- Author added part to let the card title be styled by the consumer -->
+            <h2 part="title">Shadow Card Header</h2>
+            <p>
+                <!-- The slot element with author's fallback content, allowing the consumer to add their own element. The author can still style the element from inside the Shadow DOM. -->
+                <slot name="focus-card-text">Lorem ipsum dolor sit amet. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</slot>
+            </p>
+        </article>
+
+        <!-- The styling for the shadow DOM custom element -->
+        <style>
+            *,
+            *::before,
+            *::after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .card {
+                margin: 2rem;
+                padding: 1.5rem;
+                background-color: #f1dafd;
+                border: 2px solid #c37fff;
+                border-radius: 0.5rem;
+
+                h2 {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            /* Author's styling of the consumer's added element */
+            ::slotted(p) {
+                line-height: 1.6rem;
+            }
+        </style>
+    </template>
+</body>
+</html>
