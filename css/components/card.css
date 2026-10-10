@@ -1,0 +1,31 @@
+.assignment-cards {
+    h2 {
+        margin: var(--spacing-md) 0;
+        font-size: clamp(var(--font-size-sm), var(--font-size-fluid), var(--font-size-md));
+   }
+
+   .cards {
+        display: grid;
+        gap: calc(var(--spacing-md) * 2);
+        grid-template-columns: 1fr;
+
+        @media (width >= 760px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (width >= 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            padding: var(--spacing-lg);
+            background-color: var(--color-primary);
+            border-radius: var(--border-radius);
+            text-align: center;
+
+            h3 {
+                margin-bottom: var(--spacing-sm);
+            }
+        }
+   }
+}
