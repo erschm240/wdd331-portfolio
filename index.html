@@ -3,30 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Schmitz - Portfolio</title>
+    <title>WDD331R Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <h1>Emma Schmitz</h1>
+        <h1>Emma Schmitz - WDD 331R Advanced CSS</h1>
     </header>
-    <nav>
-        <h2>Assignments</h2>
-        <ul>
-            <li>
-                <a href="unit-1/custom-properties/index.html">
-                    Custom Properties and Nesting
-                </a>
-            </li>
-            <li>
-                <a href="unit-2/layered-components/index.html">
-                    Layered Components
-                </a>
-            </li>
-        </ul>
-    </nav>
     <main>
-        <p>Hello! I'm Emma, a student at BYU-I. I'm currently majoring in Web Design and Development. Welcome to my portfolio! This is a showcase of my work for the Advanced CSS class and hopefully I can use it for more projects in the future.</p>
+        <p>
+            Hello! I'm Emma, a student at BYU-I. I'm currently majoring in Web Design and Development. Welcome to my portfolio! This is a showcase of my work for the Advanced CSS class and hopefully I can use it for more projects in the future.
+        </p>
+
+        <section class="assignment-cards">
+            <h2>Assignments</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="images/custom-properties-nesting.png" alt="Custom properties and nesting thumbnail">
+                    <a href="unit-1/custom-properties/index.html">
+                        <h3>Custom Properties and Nesting</h3>
+                    </a>
+                    <p class="text-left">Use modern CSS features like custom properties, math functions, and native nesting to style a web page.</p>
+                </article>
+                <article class="card">
+                    <img src="images/layered-components.png" alt="Layered components thumbnail">
+                    <a href="unit-2/layered-components/index.html">
+                        <h3>Layered Components</h3>
+                    </a>
+                    <p class="text-left">Use <code>@layer</code> and <code>@import</code> to create layers of specificity and control what styles should override each other.</p>
+                </article>
+                <article class="card">
+                    <img src="images/bootstrap-awareness.png" alt="Bootstrap awareness thumbnail">
+                    <a href="unit-2/bootstrap-awareness/index.html">
+                        <h3>Bootstrap Awareness</h3>
+                    </a>
+                    <p class="text-left">Week 03 teaching activity: demonstrate what the Bootstrap framework does and what it's used for.</p>
+                </article>
+                <article class="card">
+                    <img src="images/part-and-slotted.png" alt="Part and slotted thumbnail">
+                    <a href="unit-2/part-and-slotted/index.html">
+                        <h3>Part and Slotted</h3>
+                    </a>
+                    <p class="text-left">Week 04 teaching activity: create a custom component, attach a shadow tree, and use <code>::part()</code> and <code>::slotted()</code> to allow component styles inside the Shadow DOM to be changed or change the style of an outer element being passed in.</p>
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 </html>

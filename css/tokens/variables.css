@@ -1,0 +1,16 @@
+:root {
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-fluid: 5vw;
+
+    --font-body: Arial, system-ui, -apple-system, sans-serif;
+    --font-size-sm: 0.8rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.5rem;
+    --font-size-lg: 2rem;
+    --font-size-xlg: 2.5rem;
+    --font-size-fluid: 5vw;
+
+    --border-radius: 0.5rem;
+}
