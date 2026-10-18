@@ -1,9 +1,8 @@
 :root {
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-fluid: 5vw;
 
+    /* Typography */
+    --font-family-sans: system-ui, sans-serif;
+    --font-family-mono: monospace;
     --font-body: Arial, system-ui, -apple-system, sans-serif;
     --font-size-sm: 0.8rem;
     --font-size-base: 1rem;
@@ -12,5 +11,26 @@
     --font-size-xlg: 2.5rem;
     --font-size-fluid: 5vw;
 
-    --border-radius: 0.5rem;
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-fluid: 5vw;
+
+    /* Radii */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+
+    /* Transitions */
+    --transition-base: 0.2s ease;
+
+    /* Icons */
+    --icon-size-sm: 24px;
+    --icon-size-md: 32px;
+    
+    /* Focus */
+    --outline-width: 2px;
 }
