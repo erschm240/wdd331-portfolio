@@ -2,7 +2,8 @@
     h2 {
         margin: var(--spacing-md) 0;
         font-size: clamp(var(--font-size-sm), var(--font-size-fluid), var(--font-size-md));
-   }
+        color: var(--color-text);
+    }
 
    .cards {
         display: grid;
@@ -19,12 +20,16 @@
 
         .card {
             padding: var(--spacing-lg);
-            background-color: var(--color-primary);
-            border-radius: var(--border-radius);
+            background-color: var(--color-surface);
+            border-radius: var(--radius-lg);
             text-align: center;
 
             h3 {
                 margin-bottom: var(--spacing-sm);
+            }
+
+            p {
+                color: var(--color-text-muted);
             }
         }
    }
