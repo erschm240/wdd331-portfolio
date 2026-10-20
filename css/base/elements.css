@@ -38,7 +38,9 @@ body {
         }
 
         code {
-            color: var(--color-code);
+            background-color: var(--accent-800);
+            padding: calc(var(--spacing-xs) / 2);
+            border-radius: var(--radius-sm);
         }
     }
 }
