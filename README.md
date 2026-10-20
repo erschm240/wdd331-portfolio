@@ -47,6 +47,9 @@ To run it, type "npm run build" in the terminal.
 
 This build script runs LightningCSS to start. Then it bundles the code, meaning it takes all the code scattered in different files and compiles it into one. Next it minifies the code, removing all whitespaces, comments, and readable formatting. Then the script will modify the code to support the browsers specified by the percentage. In this case it means any browser that is used by 0.25% of the world. Lastly, it states where to go to get the code to build (css/main.css) and where to put it when it's done (dist/styles.css).
 
+## Dark Mode
+This website protfolio now uses a light mode and dark mode toggle as of October 17. The color tokens live in css/tokens/colors.css.
+
 ## Pages
 
 [Home](index.html)
@@ -58,3 +61,5 @@ This build script runs LightningCSS to start. Then it bundles the code, meaning 
 [Bootstrap Awareness](unit-2/bootstrap-awareness/index.html)
 
 [Part and Slotted](unit-2/part-and-slotted/index.html)
+
+[Contrast Color](unit-3/contrast-color/index.html)
