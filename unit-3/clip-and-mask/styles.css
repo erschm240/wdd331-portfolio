@@ -73,10 +73,13 @@ h1 {
         }
     } */
 
-    .mask {
+    .mask-linear {
         -webkit-mask-image: linear-gradient(to top, black 70%, transparent);
         mask-image: linear-gradient(to top, black 70%, transparent);
-        /* -webkit-mask-image: radial-gradient(black 50%, transparent 60%);
-        mask-image: radial-gradient(black 50%, transparent 60%); */
+    }
+
+    .mask-radial {
+        -webkit-mask-image: radial-gradient(black 50%, transparent 60%);
+        mask-image: radial-gradient(black 50%, transparent 60%);
     }
 }
