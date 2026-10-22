@@ -1,0 +1,86 @@
+:root {
+    --color-primary: #f7f7f7;
+    --color-accent: oklch(0.80 0.14 307);
+    --background-image: 
+
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+
+    --border-radius: 0.5rem;
+
+    --font-main: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-primary);
+}
+
+h1 {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+
+    @media (width >= 760px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (width >= 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        margin: var(--spacing-lg);
+        text-align: center;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .clip-circle {
+        clip-path: circle(50%);
+    }
+
+    .clip-polygon {
+        /* Diamond */
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        /* Arrow */
+        /* clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); */
+        /* Message */
+        /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+    }
+
+    .clip-ellipse {
+        clip-path: ellipse(50% 40%);
+    }
+
+    /* .transition {
+        clip-path: circle(30% at center);
+        transition: clip-path 0.7s ease;
+
+        &:hover {
+            clip-path: circle(100% at center);
+        }
+    } */
+
+    /* .broken-transition {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        transition: clip-path 0.7s ease;
+
+        &:hover {
+            clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        }
+    } */
+
+    .mask {
+        -webkit-mask-image: linear-gradient(to top, black 70%, transparent);
+        mask-image: linear-gradient(to top, black 70%, transparent);
+        /* -webkit-mask-image: radial-gradient(black 50%, transparent 60%);
+        mask-image: radial-gradient(black 50%, transparent 60%); */
+    }
+}
