@@ -1,0 +1,22 @@
+.site-nav {
+      display: flex;
+      flex-direction: row;
+      padding: var(--spacing-md);
+      background-color: var(--color-surface);
+      align-items: center;
+
+      ul {
+         display: flex;
+         flex-direction: row;
+         list-style-type: none;
+         align-items: center;
+
+         li {
+            padding-left: var(--spacing-md);
+         }
+      }
+
+      details {
+        margin-left: auto;
+      }
+   }

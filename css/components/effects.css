@@ -1,0 +1,82 @@
+/* Hero */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: var(--spacing-lg) auto;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+    text-align: center;
+
+    .hero-image {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .hero-content {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        z-index: 1;
+        justify-self: center;
+        align-self: center;
+
+        h1 {
+            font-size: clamp(var(--font-size-base), var(--font-size-fluid), var(--font-size-lg));
+            color: var(--color-text);
+        }
+    }
+}
+
+/* Frosted Glass */
+
+.glass-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: var(--spacing-lg) auto;
+    color: var(--color-text);
+
+    .glass-background {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .glass-panel {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        z-index: 1;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        h1 {
+            font-size: clamp(var(--font-size-base), var(--font-size-fluid), var(--font-size-lg));
+            color: var(--color-text);
+        }
+    }
+}
+
+/* Effect Styling */
+.vignette {
+    background: radial-gradient(ellipse at center, transparent 50%, oklch(0.1 0 0 / 0.5) 125%);
+}
+
+.header-shadow {
+    text-shadow: 0 1px 3px oklch(0.1 0 0 / 0.5);
+}
+
+.card-shadow {
+    box-shadow: var(--shadow-md);
+    transition: 0.5s ease;
+
+    &:hover {
+        box-shadow: var(--shadow-lg);
+    }
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px) saturate(1.4);
+}
