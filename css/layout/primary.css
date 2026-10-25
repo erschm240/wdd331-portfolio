@@ -1,5 +1,4 @@
 body {
-    /* Not needed at the moment, but keeping it in case I add a nav/footer later on */
     display: flex;
     flex-direction: column;
 }

@@ -3,7 +3,6 @@ body {
     color: var(--seed-text);
     background-color: var(--color-bg);
     line-height: 1.6;
-    padding: clamp(var(--spacing-sm), var(--spacing-fluid), var(--spacing-lg));
 
     header {
         margin-bottom: var(--spacing-md);
@@ -15,9 +14,23 @@ body {
         }
     }
 
+    a {
+        color: var(--color-link);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-link-hover);
+        }
+    }
+
     main {
         margin: var(--space-md);
+        padding: clamp(var(--spacing-sm), var(--spacing-fluid), var(--spacing-lg));
 
+        section {
+            margin-top: var(--spacing-xl);
+        }
+        
         img {
             width: 100%;
             margin-bottom: var(--spacing-lg);
@@ -26,15 +39,6 @@ body {
         p {
             font-size: clamp(var(--font-size-sm), var(--font-size-fluid), var(--font-size-base));
             color: var(--color-text);
-        }
-
-        a {
-            color: var(--color-link);
-            text-decoration: none;
-
-            &:hover {
-                color: var(--color-link-hover);
-            }
         }
 
         code {
