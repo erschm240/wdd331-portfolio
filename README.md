@@ -63,3 +63,5 @@ This website protfolio now uses a light mode and dark mode toggle as of October 
 [Part and Slotted](unit-2/part-and-slotted/index.html)
 
 [Contrast Color](unit-3/contrast-color/index.html)
+
+[Visual Effects](unit-3/visual-effects/index.html)
