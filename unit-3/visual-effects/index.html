@@ -39,14 +39,14 @@
     </nav>
 
     <!-- HERO: Use a gradient overlay and text-shadow for depth -->
-    <header class="hero vignette">
+    <header class="hero">
         <img
             class="hero-image"
             src="https://picsum.photos/seed/hero-effects/1200/500"
             alt="Landscape placeholder for hero section"
         >
         <div class="hero-content">
-            <h1 class="header-shadow">Visual Effects Showcase</h1>
+            <h1>Visual Effects Showcase</h1>
             <p>Shadows, gradients, and filters working together.</p>
         </div>
     </header>
@@ -71,7 +71,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="card card-shadow">
+                <article class="card card-shadow card-gradient">
                     <img
                         class="card-image"
                         src="https://picsum.photos/seed/card-2/400/250"
@@ -85,9 +85,9 @@
                         </p>
                     </div>
                 </article>
-                <article class="card  card-shadow">
+                <article class="card card-shadow">
                     <img
-                        class="card-image"
+                        class="card-image grayscale"
                         src="https://picsum.photos/seed/card-3/400/250"
                         alt="Placeholder image"
                     >
@@ -129,21 +129,60 @@
                 follows the actual shape of each image rather than its bounding box.
             </p>
             <div class="icon-row">
-                <!-- Replace these with your own transparent PNGs or SVGs -->
-                <img class="icon-item" src="https://cdn.jsdelivr.net/npm/@tabler/icons@2.47.0/icons/heart.svg" alt="Heart icon">
-                <img class="icon-item" src="https://cdn.jsdelivr.net/npm/@tabler/icons@2.47.0/icons/star.svg" alt="Star icon">
-                <img class="icon-item" src="https://cdn.jsdelivr.net/npm/@tabler/icons@2.47.0/icons/bookmark.svg" alt="Bookmark icon">
-                <img class="icon-item" src="https://cdn.jsdelivr.net/npm/@tabler/icons@2.47.0/icons/message-circle.svg" alt="Message icon">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" aria-label="info icon" class="icon-item">
+                    <path d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66
+                        c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z
+                        M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0
+                        C13.953,8.75,12.871,12.473,12.622,13.321z"/>
+                </svg>
+                <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" aria-label="flame icon" class="icon-item">
+                    <path d="M405.878,357.099c-3.641-41.297-29.703-99.953-92.734-102.781c-92.922,0.25-106.391,72.141-97.656,103.984
+                        c7.328,26.75,26.781,48.078,54.422,45.656s48.469-26.844,45.656-54.438c-0.484-29.266,24.344-28.5,25.094,3.875
+                        c1.016,43.094-28.094,80.922-71.031,84.703c-42.938,3.75-77.531-28.547-84.719-71.031c-4.344-25.781,0.594-75.172,44.438-113.766
+                        c56.344-49.594,117.719,9.875,112.734-70.578c-5.031-81.188-25.438-82.906-78.063-114.531
+                        c-34.797-20.922-40.75-54.109-38.797-67.109c0.078-0.625,0.078-1.563-1.156-0.781c-32.594,20.469-32.859,58-13.813,87.25
+                        c9.141,14.016,28.031,21.234,29.969,43.422c2.641,30.094-14.672,39.281-28.938,51.703c-14.25,12.422-31.219,25.75-56.813,52.078
+                        c-40.875,42.063-51.625,95.219-48.359,140.266c3.609,41.281,23.625,77.203,53.031,101.875
+                        c29.453,24.688,68.313,38.141,109.594,34.516c41.297-3.625,77.203-23.641,101.906-53.063
+                        C395.315,428.911,409.487,398.38,405.878,357.099z"/>
+                </svg>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="moon-icon" class="icon-item">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                </svg>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" xml:space="preserve" aria-label="sun icon" class="icon-item">
+                    <circle fill-rule="evenodd" clip-rule="evenodd" cx="32.003" cy="32.005" r="16.001"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001,31.997c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4
+                        s1.789,4,4,4h4C10.212,35.997,12.001,34.208,12.001,31.997z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.204,46.139l-2.832,2.833c-1.563,1.562-1.563,4.094,0,5.656
+                        c1.562,1.562,4.094,1.562,5.657,0l2.833-2.832c1.562-1.562,1.562-4.095,0-5.657C16.298,44.576,13.767,44.576,12.204,46.139z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.003,51.999c-2.211,0-4,1.789-4,4V60c0,2.211,1.789,4,4,4
+                        s4-1.789,4-4l-0.004-4.001C36.003,53.788,34.21,51.999,32.003,51.999z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.798,46.143c-1.559-1.566-4.091-1.566-5.653-0.004
+                        s-1.562,4.095,0,5.657l2.829,2.828c1.562,1.57,4.094,1.562,5.656,0s1.566-4.09,0-5.656L51.798,46.143z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.006,27.997l-4.009,0.008
+                        c-2.203-0.008-3.992,1.781-3.992,3.992c-0.008,2.211,1.789,4,3.992,4h4.001c2.219,0.008,4-1.789,4-4
+                        C64.002,29.79,62.217,27.997,60.006,27.997z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.798,17.859l2.828-2.829c1.574-1.566,1.562-4.094,0-5.657
+                        c-1.559-1.567-4.09-1.567-5.652-0.004l-2.829,2.836c-1.562,1.555-1.562,4.086,0,5.649C47.699,19.426,50.239,19.418,51.798,17.859z"
+                        />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.003,11.995c2.207,0.016,4-1.789,4-3.992v-4
+                        c0-2.219-1.789-4-4-4c-2.211-0.008-4,1.781-4,3.993l0.008,4.008C28.003,10.206,29.792,11.995,32.003,11.995z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.212,17.855c1.555,1.562,4.079,1.562,5.646-0.004
+                        c1.574-1.551,1.566-4.09,0.008-5.649l-2.829-2.828c-1.57-1.571-4.094-1.559-5.657,0c-1.575,1.559-1.575,4.09-0.012,5.653
+                        L12.212,17.855z"/>
+                </svg>
             </div>
         </section>
 
-        <!-- CHOOSE TOPIC: Add your own section here if applicable -->
-        <!--
-            If you completed a choose topic (blend modes, clip-path,
-            shape-outside, advanced gradients, or filter performance),
-            add a section below that demonstrates at least one technique
-            from it. Add the HTML you need and style it in your effects.css.
-        -->
+        <section class="clip-path">
+            <h2>Clip Path on an Image</h2>
+            <p>
+                This image uses a clip path to cut it into the shape of a circle and cause it to grow with a transition when hovered over.
+            </p>
+            <div class="card">
+                <img class="clip-circle transition" src="images/park.jpg" alt="A park with a city skyline behind it">
+            </div>
+        </section>
     </main>
 
 <footer class="site-footer">

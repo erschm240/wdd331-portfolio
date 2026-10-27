@@ -29,7 +29,7 @@
 :root,
 html {
     /* ---- Semantic tokens ---- */
-    --color-bg: light-dark(var(--seed-bg), oklch(0.18 0.02 300));
+    --color-bg: light-dark(var(--seed-bg), oklch(0.23 0.02 300));
     --color-surface: light-dark(var(--seed-surface), oklch(0.30 0.03 300));
     --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 300));
     --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 290));
@@ -54,9 +54,31 @@ html {
     --theme-toggle-border-hover: color-mix(in srgb, var(--header-text) 55%, var(--header-bg));
 
     /* ---- Shadows ---- */
-    --shadow-color: light-dark(rgb(0 0 0 / 0.09), rgb(0 0 0 / 0.28));
-    --shadow-sm: 0 1px 2px 0 var(--shadow-color);
-    --shadow-md: 0 1px 3px 0 var(--shadow-color);
+    --shadow-color-100: light-dark(oklch(0.2 0 0 / 0.05), oklch(0 0 300 / 0.25));
+    --shadow-color-200: light-dark(oklch(0.2 0 0 / 0.06), oklch(0 0 300 / 0.26));
+    --shadow-color-300: light-dark(oklch(0.2 0 0 / 0.07), oklch(0 0 300 / 0.27));
+    --shadow-color-400: light-dark(oklch(0.2 0 0 / 0.08), oklch(0 0 300 / 0.28));
+    --shadow-color-500: light-dark(oklch(0.2 0 0 / 0.1), oklch(0 0 300 / 0.3));
+    --shadow-color-600: light-dark(oklch(0.2 0 0 / 0.2), oklch(0 0 300 / 0.5));
+
+    --shadow-sm:
+        0 1px 2px var(--shadow-color-500),
+        0 2px 4px var(--shadow-color-200);
+    --shadow-md:
+        0 2px 4px var(--shadow-color-500),
+        0 6px 12px var(--shadow-color-300),
+        0 16px 32px var(--shadow-color-100);
+    --shadow-lg: 
+        0 4px 8px var(--shadow-color-500),
+        0 12px 24px var(--shadow-color-400),
+        0 24px 48px var(--shadow-color-200);
+
+    /* Gradients */
+    --vignette-color: light-dark(oklch(0.1 0 0 / 0.5), oklch(0 0 0 / 0.65));
+    --gradient-color-accent: light-dark(var(--accent-200), oklch(from var(--accent-700) l calc(c / 1.5) h));
+
+    /* Frosted Glass background */
+    --semi-transparent-background: light-dark(oklch(0.94 0 270 / 0.4), oklch(0 0 300 / 0.5));
 }
 
 /* User chose dark */
