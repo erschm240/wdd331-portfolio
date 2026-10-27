@@ -1,4 +1,4 @@
-.site-nav {
+.site-nav, footer {
       display: flex;
       flex-direction: row;
       padding: var(--spacing-md);
