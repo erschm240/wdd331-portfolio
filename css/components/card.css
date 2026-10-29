@@ -23,6 +23,27 @@
             background-color: var(--color-surface);
             border-radius: var(--radius-lg);
             text-align: center;
+
+            /* Aspect Ratio and Object Fit in Layout Teaching Activity */
+            img {
+                /* --- Essentials --- */
+                /* Make sure the image stays inside the container */
+                width: 100%;
+
+                /* Constrain the image proportions to a specified aspect ratio */
+                aspect-ratio: 16 / 9;
+
+                /* Scale up the image to fit the container and 
+                crop off what overlaps */
+                object-fit: cover;
+
+                /* --- Optional --- */
+                /* Center the image in the container */
+                object-position: top;
+
+                /* Cause the image to display on its own line */
+                display: block;
+            }
             
 
             h3 {

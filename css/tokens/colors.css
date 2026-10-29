@@ -79,6 +79,9 @@ html {
 
     /* Frosted Glass background */
     --semi-transparent-background: light-dark(oklch(0.94 0 270 / 0.4), oklch(0 0 300 / 0.5));
+
+    /* Code snippets */
+    /* --code-snippet-bg: light-dark(var(--accent-200), var(--accent-800)); */
 }
 
 /* User chose dark */
