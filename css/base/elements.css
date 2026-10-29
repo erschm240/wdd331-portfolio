@@ -45,7 +45,7 @@ body {
         }
 
         code {
-            background-color: var(--accent-800);
+            background-color: var(--color-bg);
             padding: calc(var(--spacing-xs) / 2);
             border-radius: var(--radius-sm);
         }
