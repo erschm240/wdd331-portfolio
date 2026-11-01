@@ -29,10 +29,10 @@
 :root,
 html {
     /* ---- Semantic tokens ---- */
-    --color-bg: light-dark(var(--seed-bg), oklch(0.23 0.02 300));
-    --color-surface: light-dark(var(--seed-surface), oklch(0.30 0.03 300));
+    --color-bg: light-dark(var(--seed-bg), oklch(0.27 0.02 300));
+    --color-surface: light-dark(var(--seed-surface), oklch(0.33 0.03 300));
     --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 300));
-    --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 290));
+    --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.75 0.02 280));
     --color-accent: light-dark(var(--seed-accent), oklch(0.50 0.15 280));
     --color-accent-hover: light-dark(var(--seed-accent-hover), oklch(0.68 0.18 280));
     --color-link: light-dark(var(--seed-link), oklch(0.80 0.15 280));
@@ -54,12 +54,12 @@ html {
     --theme-toggle-border-hover: color-mix(in srgb, var(--header-text) 55%, var(--header-bg));
 
     /* ---- Shadows ---- */
-    --shadow-color-100: light-dark(oklch(0.2 0 0 / 0.05), oklch(0 0 300 / 0.25));
-    --shadow-color-200: light-dark(oklch(0.2 0 0 / 0.06), oklch(0 0 300 / 0.26));
-    --shadow-color-300: light-dark(oklch(0.2 0 0 / 0.07), oklch(0 0 300 / 0.27));
-    --shadow-color-400: light-dark(oklch(0.2 0 0 / 0.08), oklch(0 0 300 / 0.28));
-    --shadow-color-500: light-dark(oklch(0.2 0 0 / 0.1), oklch(0 0 300 / 0.3));
-    --shadow-color-600: light-dark(oklch(0.2 0 0 / 0.2), oklch(0 0 300 / 0.5));
+    --shadow-color-100: light-dark(oklch(0.2 0 0 / 0.05), oklch(0 0 300 / 0.45));
+    --shadow-color-200: light-dark(oklch(0.2 0 0 / 0.06), oklch(0 0 300 / 0.46));
+    --shadow-color-300: light-dark(oklch(0.2 0 0 / 0.07), oklch(0 0 300 / 0.47));
+    --shadow-color-400: light-dark(oklch(0.2 0 0 / 0.08), oklch(0 0 300 / 0.48));
+    --shadow-color-500: light-dark(oklch(0.2 0 0 / 0.1), oklch(0 0 300 / 0.5));
+    --shadow-color-600: light-dark(oklch(0.2 0 0 / 0.2), oklch(0 0 300 / 0.7));
 
     --shadow-sm:
         0 1px 2px var(--shadow-color-500),
