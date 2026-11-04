@@ -7,7 +7,7 @@
 
    .cards {
         display: grid;
-        gap: calc(var(--spacing-md) * 2);
+        gap: calc(var(--spacing-sm) * 1.5);
         grid-template-columns: 1fr;
 
         @media (width >= 760px) {
