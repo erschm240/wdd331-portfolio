@@ -65,3 +65,7 @@ This website protfolio now uses a light mode and dark mode toggle as of October 
 [Contrast Color](unit-3/contrast-color/index.html)
 
 [Visual Effects](unit-3/visual-effects/index.html)
+
+[Editorial Grid](unit-4/grid-layouts/editorial.html)
+
+[Responsive Card Grid](unit-4/grid-layouts/cards.html)

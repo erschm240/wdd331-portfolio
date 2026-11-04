@@ -8,6 +8,22 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
 
     .card {
-        object-position: bottom center;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            a {
+                margin-top: auto;
+            }
+        }
     }
 }
