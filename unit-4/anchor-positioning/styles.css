@@ -1,0 +1,67 @@
+:root {
+    --color-border-ap: rgb(71, 64, 74);
+}
+
+h1 {
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+button {
+    margin: var(--spacing-xxl);
+    padding: var(--spacing-md);
+    background-color: var(--accent-300);
+    border: 1px solid var(--color-border-ap);
+    color: var(--color-text);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+
+    /* Anchor name */
+    anchor-name: --ap-btn;
+}
+
+/* Tooltip styles */
+.tooltip {
+    padding: var(--spacing-sm);
+    background-color: var(--accent-300);
+    color: var(--color-text);
+    border: none;
+    border-radius: var(--radius-md);
+
+    position: absolute;
+    position-anchor: --ap-btn;
+}
+
+/* ----- Anchor positioning methods ----- */
+
+/* --- position-area --- */
+.area {
+    position-area: top;
+    margin: 10px;
+
+    /* Fallbacks */
+    position-try-fallbacks: 
+        bottom, 
+        left, 
+        right;
+}
+
+/* --- anchor() --- */
+/* .anchor {
+    bottom: anchor(top);
+    left: anchor(center);
+    translate: -50%;
+
+    margin-top: 20px;
+
+    position-try-fallbacks: 
+        bottom, 
+        left, 
+        right;
+} */
